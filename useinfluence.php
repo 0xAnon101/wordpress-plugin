@@ -25,12 +25,7 @@
  * Domain Path:       /languages
  */
 
- function wptuts_styles_with_the_lot()
- {
-     wp_register_style( 'useinfluence', plugins_url( 'useinfluence.css', __FILE__ ) );
-     wp_enqueue_style( 'useinfluence' );
- }
- add_action( 'wp_enqueue_scripts', 'wptuts_styles_with_the_lot' );
+
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -97,12 +92,13 @@ function basicPluginMenu(){
 
 function pluginAdminScreen() {
   echo "<a href='https://useinfluence.co'>";
-	echo "<img class='top-logo' src='".plugin_dir_path( __FILE__ )."/logo-influence.png' width='180px' height='50px' style='margin-top:20px;' >";
+	echo "<img class='top-logo' src='https://useinfluence.co/static/media/logo-influence-2.a5936714.png' width='180px' height='50px' style='margin-top:20px;' >";
 	echo "</a>";
 	echo "<br />";
   echo "<h2 class='describe' style='font-family:sans-serif;'>Please enter your Tracking ID</h2>";
-  echo "<input type='text' class='api' placeholder='e.g. INF-xxxxxxxx'></input>";
-	// echo "<input type='submit' class='submit' value='Save'></input>";
+  echo "<input type='text' class='api' style='padding: 5px 10px; border-radius:5px;' placeholder='e.g. INF-xxxxxxxx'></input>";
+	echo "br />";
+	echo "<input type='submit' class='submit' style='padding: 5px 10px ; border-radius:5px;background-color:#097fff' value='Save'></input>";
 
 
 }
