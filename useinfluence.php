@@ -25,6 +25,10 @@
  * Domain Path:       /languages
  */
 
+ <style>
+	<?php include './public/css/useinfluence-public.css'; ?>
+ </style>
+
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
@@ -92,7 +96,10 @@ function pluginAdminScreen() {
   echo "<a href='https://useinfluence.co'>";
 	echo		"<img class='top-logo' src='logo-influence.png'>";
 	echo	"</a>";
-  echo "<p>Please enter your TrakingID</p>";
-  echo "<input type='text'></input>";
+	echo "<br />";
+  echo "<h2 class='describe'>Please enter your TrakingID</h2>";
+  echo "<input type='text' class='api'></input>";
+	echo "<br />"
+	echo "<input type='submit' class='submit' value='Save' />";
 }
 run_useinfluence();
