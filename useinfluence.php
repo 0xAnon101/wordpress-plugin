@@ -25,9 +25,8 @@
  * Domain Path:       /languages
  */
 
- <style>
 	<?php include './public/css/useinfluence-public.css'; ?>
- </style>
+
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
