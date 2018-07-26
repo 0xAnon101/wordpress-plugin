@@ -93,12 +93,12 @@ function basicPluginMenu(){
 
 function pluginAdminScreen() {
   echo "<a href='https://useinfluence.co'>";
-	echo "<img class='top-logo' src='./logo-influence.png'>";
+	echo "<img class='top-logo' src='./logo-influence.png' >";
 	echo "</a>";
 	echo "<br />";
-  echo "<h2 class='describe'>Please enter your TrakingID</h2>";
+  echo "<h2 class='describe'>Please enter your Tracking ID</h2>";
   echo "<input type='text' class='api'></input>";
 	echo "<br />";
-	echo "<input type='submit' class='submit' value='Save' />";
+	echo "<input type='submit' class='submit' value='Save'></input>";
 }
 run_useinfluence();
