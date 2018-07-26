@@ -96,7 +96,7 @@ function pluginAdminScreen() {
 	echo "</a>";
 	echo "<br />";
   echo "<h2 class='describe' style='font-family:sans-serif;'>Please enter your Tracking ID</h2>";
-	echo "<form action='' method='POST'>"
+	echo "<form action='' method='POST'>";
   echo "<input type='text' class='api' style='padding: 5px 10px; border-radius:5px;' placeholder='e.g. INF-xxxxxxxx'></input>";
 	echo "<br /> <hr />";
 	echo "<input type='submit' class='submit' style='padding: 5px 10px ;cursor:pointer; color:#fff; border-radius:5px;background-color:#097fff' value='Save'></input>";
