@@ -98,7 +98,6 @@ function pluginAdminScreen() {
 	echo "<br />";
   echo "<h2 class='describe'>Please enter your Tracking ID</h2>";
   echo "<input type='text' class='api'></input>";
-	echo "<br />";
-	echo "<input type='submit' class='submit' value='Save'></input>";
+
 }
 run_useinfluence();
