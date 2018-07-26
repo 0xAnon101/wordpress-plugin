@@ -25,8 +25,18 @@
  * Domain Path:       /languages
  */
 
-include './useinfluence.css';
+ function wptuts_styles_with_the_lot()
+ {
+     // Register the style like this for a plugin:
+     wp_register_style( 'useinfluence', plugins_url( '/useinfluence.css', __FILE__ ), array(), '20120208', 'all' );
+     // or
+     // Register the style like this for a theme:
+     wp_register_style( 'useinfluence', get_template_directory_uri() . '/useinfluence.css', array(), '20120208', 'all' );
 
+     // For either a plugin or a theme, you can then enqueue the style:
+     wp_enqueue_style( 'useinfluence' );
+ }
+ add_action( 'wp_enqueue_scripts', 'wptuts_styles_with_the_lot' );
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -97,7 +107,9 @@ function pluginAdminScreen() {
 	echo "</a>";
 	echo "<br />";
   echo "<h2 class='describe' style='font-family:sans-serif;'>Please enter your Tracking ID</h2>";
-  echo "<input type='text' class='api'></input>";
+  echo "<input type='text' class='api' placeholder='e.g. INF-xxxxxxxx'></input>";
+	echo "<input type='submit' class='submit' value='Save'></input>";
+
 
 }
 run_useinfluence();
