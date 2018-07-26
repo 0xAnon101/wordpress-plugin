@@ -27,13 +27,7 @@
 
  function wptuts_styles_with_the_lot()
  {
-     // Register the style like this for a plugin:
      wp_register_style( 'useinfluence', plugins_url( '/useinfluence.css', __FILE__ ), array(), '20120208', 'all' );
-     // or
-     // Register the style like this for a theme:
-     wp_register_style( 'useinfluence', get_template_directory_uri() . '/useinfluence.css', array(), '20120208', 'all' );
-
-     // For either a plugin or a theme, you can then enqueue the style:
      wp_enqueue_style( 'useinfluence' );
  }
  add_action( 'wp_enqueue_scripts', 'wptuts_styles_with_the_lot' );
@@ -103,12 +97,12 @@ function basicPluginMenu(){
 
 function pluginAdminScreen() {
   echo "<a href='https://useinfluence.co'>";
-	echo "<img class='top-logo' src='https://useinfluence.co/static/media/logo-influence-2.a5936714.png' width='180px' height='50px' style='margin-top:20px;' >";
+	echo "<img class='top-logo' src='<?php echo get_stylesheet_directory_uri(); ?>/logo-influence.png' width='180px' height='50px' style='margin-top:20px;' >";
 	echo "</a>";
 	echo "<br />";
   echo "<h2 class='describe' style='font-family:sans-serif;'>Please enter your Tracking ID</h2>";
   echo "<input type='text' class='api' placeholder='e.g. INF-xxxxxxxx'></input>";
-	echo "<input type='submit' class='submit' value='Save'></input>";
+	// echo "<input type='submit' class='submit' value='Save'></input>";
 
 
 }
