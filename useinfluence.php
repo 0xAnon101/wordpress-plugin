@@ -27,7 +27,7 @@
 
  function wptuts_styles_with_the_lot()
  {
-     wp_register_style( 'useinfluence', plugins_url( '/useinfluence.css', __FILE__ ), array(), '20120208', 'all' );
+     wp_register_style( 'useinfluence', plugins_url( 'useinfluence.css', __FILE__ ) );
      wp_enqueue_style( 'useinfluence' );
  }
  add_action( 'wp_enqueue_scripts', 'wptuts_styles_with_the_lot' );
@@ -97,7 +97,7 @@ function basicPluginMenu(){
 
 function pluginAdminScreen() {
   echo "<a href='https://useinfluence.co'>";
-	echo "<img class='top-logo' src='<?php echo get_stylesheet_directory_uri(); ?>/logo-influence.png' width='180px' height='50px' style='margin-top:20px;' >";
+	echo "<img class='top-logo' src='".plugin_dir_path( __FILE__ )."'/logo-influence.png' width='180px' height='50px' style='margin-top:20px;' >";
 	echo "</a>";
 	echo "<br />";
   echo "<h2 class='describe' style='font-family:sans-serif;'>Please enter your Tracking ID</h2>";
