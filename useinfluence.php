@@ -25,7 +25,7 @@
  * Domain Path:       /languages
  */
 
-include './public/css/useinfluence-public.css';
+include './useinfluence.css';
 
 
 // If this file is called directly, abort.
@@ -93,8 +93,8 @@ function basicPluginMenu(){
 
 function pluginAdminScreen() {
   echo "<a href='https://useinfluence.co'>";
-	echo		"<img class='top-logo' src='logo-influence.png'>";
-	echo	"</a>";
+	echo "<img class='top-logo' src='./logo-influence.png'>";
+	echo "</a>";
 	echo "<br />";
   echo "<h2 class='describe'>Please enter your TrakingID</h2>";
   echo "<input type='text' class='api'></input>";

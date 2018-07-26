@@ -1,0 +1,13 @@
+.describe {
+  font-family: sans-serif;
+}
+
+.api {
+  padding : 5px 10px !important;
+  border-radius: 5px !important;
+}
+
+.submit {
+  border-radius: 5px !important;
+  background-color: #097fff !important;
+}

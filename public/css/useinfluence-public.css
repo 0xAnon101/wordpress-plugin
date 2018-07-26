@@ -2,16 +2,3 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
- .describe {
-   font-family: sans-serif;
- }
-
- .api {
-   padding : 5px 10px !important;
-   border-radius: 5px !important;
- }
-
- .submit {
-   border-radius: 5px !important;
-   background-color: #097fff !important;
- }
