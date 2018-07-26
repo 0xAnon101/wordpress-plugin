@@ -97,7 +97,7 @@ function basicPluginMenu(){
 
 function pluginAdminScreen() {
   echo "<a href='https://useinfluence.co'>";
-	echo "<img class='top-logo' src='".plugin_dir_path( __FILE__ )."'/logo-influence.png' width='180px' height='50px' style='margin-top:20px;' >";
+	echo "<img class='top-logo' src='".plugin_dir_path( __FILE__ )."/logo-influence.png' width='180px' height='50px' style='margin-top:20px;' >";
 	echo "</a>";
 	echo "<br />";
   echo "<h2 class='describe' style='font-family:sans-serif;'>Please enter your Tracking ID</h2>";
