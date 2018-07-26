@@ -25,7 +25,7 @@
  * Domain Path:       /languages
  */
 
-	<?php include './public/css/useinfluence-public.css'; ?>
+include './public/css/useinfluence-public.css'; 
 
 
 // If this file is called directly, abort.
